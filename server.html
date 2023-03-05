@@ -74,46 +74,76 @@
   </div>
 
   <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="custom_heading-container">
-      <h3 class=" ">
-        Booking Online
-      </h3>
-    </div>
-    <div class="container layout_padding2-top">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form action="">
-            <div>
-              <input type="text" placeholder="NAME">
-            </div>
-            <div>
-              <input type="email" placeholder="EMAIL">
-            </div>
-            <div>
-              <input type="text" placeholder="PHONE NUMBER">
-            </div>
-            <div>
-              <select name="" id="">
-                <option value="" disabled selected>TYPE OF SERVICE</option>
-                <option value="">Service 1</option>
-                <option value="">Service 2</option>
-                <option value="">Service 3</option>
-              </select>
-            </div>
-            <div>
-              <input type="text" class="message-box" placeholder="MESSAGE">
-            </div>
-            <div class="d-flex justify-content-center ">
-              <button>
-                SEND
-              </button>
-            </div>
-          </form>
-        </div>
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">
+          The EntitiesStructures class
+        </h3>
       </div>
-
+      <p class="layout_padding2-top">
+        This class regroups all the structures you will be receiving and sending to your clients, you will find players, lasers, and enemies's infos.
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="images/EntitiesStructures.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">
+          The ENTITY_TYPE enum
+        </h3>
+      </div>
+      <p class="layout_padding2-top">
+        This enum is always read first when the server receives an information by the client to know what type of entity (structure) the client is sending him.
+        If it's a PLAYER, it will be read like a player, if it's a LASER, like a laser, etc...
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="images/entity_type.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">
+          The GAME_PHASE enum
+        </h3>
+      </div>
+      <p class="layout_padding2-top">
+        This enum is used by the server to know which enemies to handle and at what point, since each wave is involves new mecanics.
+        It is never send or receive by anyone.
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="images/game_phase.png" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">
+          The t_player structure
+        </h3>
+      </div>
+      <p class="layout_padding2-top">
+        This contains the player's informations. You will find it's type PLAYER, his Health, his ID, if he's ready to start the game or not (isReady),
+        and his x and y 2D positions.
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="images/t_player.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">
+          The t_laser structure
+        </h3>
+      </div>
+      <p class="layout_padding2-top">
+        This contains the lasers's informations. You will find it's type LASER, which player it's attached to (plaerID), his ID (LaserID), 
+        and his x and y 2D positions.
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="images/t_laser.png" alt="">
+      </div>
     </div>
   </section>
   <!-- end contact section -->
